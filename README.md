@@ -9,13 +9,13 @@ Developed as part of an Artificial Intelligence coursework at Zewail City of Sci
 
 ## Objectives
 
-Implement and analyze multi-agent search algorithms.
+- Implement and analyze multi-agent search algorithms.
 
-Develop heuristic functions to evaluate game states.
+- Develop heuristic functions to evaluate game states.
 
-Optimize decision-making under uncertainty.
+- Optimize decision-making under uncertainty.
 
-Compare algorithm performance and computational efficiency.
+- Compare algorithm performance and computational efficiency.
 
 ### Implemented Agents
 
