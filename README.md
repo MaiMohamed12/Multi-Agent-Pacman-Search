@@ -1,33 +1,57 @@
-# Installation
+# Multi-Agent Pacman Search
 
-### Prerequisites
 
-Ensure that you're using Python version 3.12. If you have a different version, you might experience GUI-related issues. Check your Python version by running:
+## Description
+
+Implementation of multi-agent search algorithms in the classic Pac-Man game using Minimax, Alpha-Beta Pruning, and Expectimax techniques.
+The project explores adversarial decision-making, stochastic behavior, and heuristic evaluation to optimize Pac-Man’s strategy against ghost agents.
+Developed as part of an Artificial Intelligence coursework at Zewail City of Science, Technology and Innovation.
+
+## Objectives
+
+Implement and analyze multi-agent search algorithms.
+
+Develop heuristic functions to evaluate game states.
+
+Optimize decision-making under uncertainty.
+
+Compare algorithm performance and computational efficiency.
+
+### Implemented Agents
+
+| Agent                        | Description                                     |
+| ---------------------------- | ----------------------------------------------- |
+| **ReflexAgent**              | A reactive agent that uses heuristic evaluation.|
+| **MinimaxAgent**             | Adversarial search assuming optimal ghost play. |
+| **AlphaBetaAgent**           | Optimized Minimax with pruning for efficiency.  |
+| **ExpectimaxAgent**          | Models stochastic (random) ghost behavior.      |
+| **BetterEvaluationFunction** | Enhanced heuristic for improved scoring.        |
+
+### How to Run
 ```
-python --version
+# Play manually
+python pacman.py
+
+# Run a specific agent
+python pacman.py -p MinimaxAgent -a depth=3
+
+# Evaluate implementation
+python autograder.py -q q5 --no-graphics
 ```
+## Key Topics
 
-### Installing
+- Multi-Agent Game Search
 
-After installing Miniconda, set up your environment with the following commands:
-```
-conda create --name cs221-hw5 python=3.12
-conda activate cs221-hw5
-This homework does not require any additional packages, so feel free to reuse the conda environment you installed earlier for previous homeworks.
-```
+- Adversarial and Stochastic Decision-Making
 
-# Pacman instructions
+- Heuristic Evaluation and Optimization
 
-Pacman extra credit should be uploaded as a separate gradescope assignment. To
-do so, note grader_ec.py is the same as grader.py but adds only question 4 to
-the extra credit. Run `publish-assignment.py` one with the original grader.py
-to make the main programming assignment, and once with `grader_ec.py`
-overwriting `grader.py` to make the extra credit assignment.
+- Game Tree Search and Pruning
 
-# Other instructions
+## Author
 
-To play, type:   python pacman.py
+**Mai Osama Mohamed Mamoon**
 
-For help, type:  python pacman.py -h
+Zewail City of Science, Technology and Innovation
 
-See http://inst.eecs.berkeley.edu/~cs188 for more information.
+
